@@ -1,8 +1,25 @@
+// class X{
+//   final name;
+//   static const int age =10;
+//   X(this.name);
+
+// }
+// main(){
+//   var x = X('John');
+//   print(x.name);
+// }
+
+
+
+// We should access the Static const int  with the Class name Only
+class X{
+  final name;
+  static const int age =10;
+  X(this.name);
+
+}
 main(){
-  var one = int.parse('1');
-  assert(one == 1);
-  var two = double.parse('1.1');
-  assert(two == 1.1);
-  print(one);
-  print(two);
+  var x = X('John');
+  print(x.name);
+  print(X.age);
 }
